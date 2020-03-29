@@ -8,18 +8,18 @@ import NotFound from './pages/NotFound'
 const App = () => {
   return (
     <Router>
-      <header>
-        <h1>Welcome to my SPA</h1>
+      <header class="menu">
+        <h3>menu options:</h3>
         <nav>
           <ul>
             <li>
-              <Link to="/">Go Home</Link>
+              <Link to="/">Back to Home</Link>
             </li>
+            {/* <li> */}
+            {/* <Link to="/1">Featured Show</Link> */}
+            {/* </li> */}
             <li>
-              <Link to="/1">Page 1</Link>
-            </li>
-            <li>
-              <Link to="/2">Page 2</Link>
+              <Link to="/2">Cast and Crew</Link>
             </li>
           </ul>
         </nav>

@@ -4,9 +4,43 @@
 
 html {
   height: 100%;
+  background-color: blanchedalmond;
 }
 
 body {
   margin: 0;
   min-height: 100%;
+}
+
+header.menu {
+  display: flex;
+}
+
+header.menu nav li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MainTitle {
+  text-align: center;
+}
+
+.topshows {
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: .5rem;
+  border-bottom: 4px solid black;
+}
+
+.topshowslist {
+  text-align: center;
+  list-style: none;
+}
+
+ul li:nth-child(odd) {}
+
+#root>main>ul {
+  margin: 0;
+  padding: 0;
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import TvShow from '../components/TvShow'
+import CastCrew from '../components/CastCrew'
 
 const HomePage = () => {
   const [tvShows, setTvShows] = useState([])
@@ -20,16 +21,24 @@ const HomePage = () => {
     console.log('effectively working')
     getAllTvSHows()
   }, [])
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+
   return (
     <>
-      <header>
-        <h1>Help end COVID-19! Stay home and binge these shows!</h1>
+      <header class="MainTitle">
+        <h1>Help end COVID-19! </h1>
+        <h2>Stay home and binge these shows!</h2>
       </header>
+      <header class="topshows">Top shows:</header>
       <main>
-        <header>top shows</header>
-        <ul>
+        <ul class="topshowslist">
           {tvShows.map((tvShow) => {
-            return <TvShow />
+            return (
+              <TvShow name={tvShow.name} vote_average={tvShow.vote_average} />
+            )
           })}
         </ul>
       </main>

@@ -1,14 +1,13 @@
 import React from 'react'
 
-const TvShow = () => {
+const TvShow = (props) => {
+  const { name, vote_average } = props
   return (
     <li>
-      {/* backdrop_path AKA the image */}
-      {/* <img src="" alt="" /> */}
       {/* name AKA show name */}
-      <p>Walking Dead</p>
+      <p>{name}</p>
       {/* vote_average AKA shows rating */}
-      <p>9.1</p>
+      <p>Viewer rating: {vote_average}</p>
     </li>
   )
 }
