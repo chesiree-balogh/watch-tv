@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import TvShow from '../components/TvShow'
-import CastCrew from '../components/CastCrew'
 
 const HomePage = () => {
   const [tvShows, setTvShows] = useState([])
